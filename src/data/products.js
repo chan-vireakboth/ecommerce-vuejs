@@ -1,0 +1,178 @@
+// Sample catalog used by the Landing, Product and Business pages.
+// Replace with data from your API.
+const img = (id, w = 600) =>
+  `https://images.unsplash.com/photo-${id}?w=${w}&q=80&auto=format&fit=crop`
+
+export const categories = ['All', 'Electronics', 'Fashion', 'Home', 'Beauty', 'Sports']
+
+export const categoryImages = {
+  Electronics: img('1498049794561-7780e7231661', 400),
+  Fashion: img('1601924994987-69e26d50dc26', 400),
+  Home: img('1556228453-efd6c1ff04f6', 400),
+  Beauty: img('1522335789203-aabd1fc54bc9', 400),
+  Sports: img('1517836357463-d25dfeac3438', 400),
+}
+
+export const heroImages = [
+  img('1483985988355-763728e1935b', 800),
+  img('1534452203293-494d7ddbf7e0', 800),
+]
+
+export const products = [
+  {
+    id: 1,
+    name: 'Wireless Headphones',
+    category: 'Electronics',
+    price: 129,
+    oldPrice: 159,
+    rating: 4.8,
+    image: img('1505740420928-5e560c06d30e'),
+    badge: 'Best seller',
+  },
+  {
+    id: 2,
+    name: 'Smart Watch',
+    category: 'Electronics',
+    price: 249,
+    rating: 4.6,
+    image: img('1523275335684-37898b6baf30'),
+  },
+  {
+    id: 3,
+    name: 'Denim Shirt',
+    category: 'Fashion',
+    price: 59,
+    rating: 4.5,
+    image: img('1596755094514-f87e34085b2c'),
+    badge: 'New',
+  },
+  {
+    id: 4,
+    name: 'Running Sneakers',
+    category: 'Fashion',
+    price: 89,
+    oldPrice: 110,
+    rating: 4.7,
+    image: img('1542291026-7eec264c27ff'),
+  },
+  {
+    id: 5,
+    name: 'Desk Lamp',
+    category: 'Home',
+    price: 74,
+    rating: 4.4,
+    image: img('1507473885765-e6ed057f782c'),
+  },
+  {
+    id: 6,
+    name: 'Scented Candle',
+    category: 'Home',
+    price: 24,
+    rating: 4.3,
+    image: img('1602874801007-bd458bb1b8b6'),
+  },
+  {
+    id: 7,
+    name: 'Hydrating Cream',
+    category: 'Beauty',
+    price: 28,
+    rating: 4.9,
+    image: img('1620916566398-39f1143ab7be'),
+    badge: 'Top rated',
+  },
+  {
+    id: 8,
+    name: 'Dumbbell Set',
+    category: 'Sports',
+    price: 65,
+    rating: 4.6,
+    image: img('1517836357463-d25dfeac3438'),
+  },
+]
+
+export const shops = [
+  {
+    id: 1,
+    name: 'Urban Threads',
+    category: 'Fashion',
+    location: 'Phnom Penh',
+    rating: 4.8,
+    reviews: 1240,
+    products: 320,
+    verified: true,
+    cover: img('1441986300917-64674bd600d8'),
+  },
+  {
+    id: 2,
+    name: 'The Corner Store',
+    category: 'Home',
+    location: 'Siem Reap',
+    rating: 4.6,
+    reviews: 860,
+    products: 145,
+    verified: true,
+    cover: img('1472851294608-062f824d29cc'),
+  },
+  {
+    id: 3,
+    name: 'Glow Beauty',
+    category: 'Beauty',
+    location: 'Phnom Penh',
+    rating: 4.9,
+    reviews: 2105,
+    products: 210,
+    verified: true,
+    cover: img('1571781926291-c477ebfd024b'),
+  },
+  {
+    id: 4,
+    name: 'Style Studio',
+    category: 'Fashion',
+    location: 'Battambang',
+    rating: 4.5,
+    reviews: 432,
+    products: 98,
+    cover: img('1441984904996-e0b6ba687e04'),
+  },
+  {
+    id: 5,
+    name: 'Fresh Market',
+    category: 'Home',
+    location: 'Kampot',
+    rating: 4.4,
+    reviews: 318,
+    products: 540,
+    cover: img('1604719312566-8912e9227c6a'),
+  },
+  {
+    id: 6,
+    name: 'Gadget Hub',
+    category: 'Electronics',
+    location: 'Phnom Penh',
+    rating: 4.7,
+    reviews: 1580,
+    products: 260,
+    verified: true,
+    cover: img('1498049794561-7780e7231661'),
+  },
+  {
+    id: 7,
+    name: 'Daily Brew Café',
+    category: 'Home',
+    location: 'Sihanoukville',
+    rating: 4.6,
+    reviews: 712,
+    products: 64,
+    cover: img('1556740738-b6a63e27c4df'),
+  },
+  {
+    id: 8,
+    name: 'FitZone Sports',
+    category: 'Sports',
+    location: 'Phnom Penh',
+    rating: 4.5,
+    reviews: 529,
+    products: 175,
+    cover: img('1517836357463-d25dfeac3438'),
+  },
+]
